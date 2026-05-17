@@ -20,23 +20,32 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>${log4j.version}</version> <!-- 请替换为最新稳定版 -->
+            <version>${log4j.version}</version>
         </dependency>
         <!-- Log4j2 API -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>${log4j.version}</version> <!-- 版本需与core一致 -->
+            <version>${log4j.version}</version>
         </dependency>
+        <!-- SLF4J 到 Log4j2 的桥接 -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
-            <version>${log4j.version}</version> <!-- 版本需与core一致 -->
+            <version>${log4j.version}</version>
         </dependency>
+        <!-- 高性能异步日志 -->
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
-            <version>3.4.4</version> <!-- 建议使用最新稳定版 -->
+            <version>3.4.4</version>
+        </dependency>
+        <!-- Lombok：自动生成 @Slf4j 等注解 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
